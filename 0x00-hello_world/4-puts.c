@@ -8,9 +8,7 @@
  *
  * *
  *
- * * Description: using the main function
- *
- * * this program prints
+ ** Description: using the main function this program prints
  *
  *
  *
