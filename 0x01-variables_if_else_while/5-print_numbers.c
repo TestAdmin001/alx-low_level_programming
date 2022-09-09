@@ -1,23 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase, except for q and e.
+ * main - Prints all single digit numbers of base 10 starting from 0.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int n;
+	int num;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	for (num = 0; num < 10; num++)
+		printf("%d", num);
 
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
-	else
-		printf("%d is zero\n", n);
+	printf("\n");
 
 	return (0);
 }
