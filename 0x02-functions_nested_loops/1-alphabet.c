@@ -1,14 +1,17 @@
-#include "holberton.h"
+#include<stdio.h>
+#include<ctype.h>
 
-/**
- * print_alphabet - prints the alphabet in lowercase, followed by a new line.
- */
-void print_alphabet(void)
+int main()
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
-
-	_putchar('\n');
+	int ctr=0;
+	char str[]=" The quick brown fox \n jumps over the \n lazy dog. \n";	
+	printf("\n Print only the string before new line character :\n");  
+    printf("----------------------------------------------------\n");	
+	while (isprint(str[ctr]))
+	{
+		putchar (str[ctr]);
+		ctr++;
+	}
+	printf("\n\n");
+	return 0;
 }
